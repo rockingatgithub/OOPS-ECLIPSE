@@ -9,12 +9,19 @@ package oops;
 public class Vehicle {
 
 	
-	public int maxSpeed;
+	private int maxSpeed;
 	public boolean isMotorised;
 	
-	public Vehicle (int maxSpeed, boolean isMotorised) {
-		this.maxSpeed = maxSpeed;
+	public Vehicle (boolean isMotorised) {
 		this.isMotorised = isMotorised;
+	}
+	
+	public void setMaxSpeed (int maxSpeed) {
+		this.maxSpeed = maxSpeed;
+	}
+	
+	public int getMaxSpeed () {
+		return this.maxSpeed;
 	}
 	
 
